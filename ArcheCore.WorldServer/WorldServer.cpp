@@ -35,7 +35,14 @@ int main(int argc, char* argv[])
 
 	// JSON stuff
 	std::ifstream f((config_path));
+	if (!f) {
+		spdlog::error("Server Config File not found. Read the ReadMe. Aborting");
+		std::cin.get();
+		return 0;
+	}
+
 	nlohmann::json jsonData = nlohmann::json::parse(f);
+
 	if (jsonData.empty()) {
 		std::cout << "JSON ERROR: data is empty!" << std::endl;
 		std::cin.get();
@@ -93,7 +100,8 @@ int main(int argc, char* argv[])
 
 	if (worldServer.Start() && streamServer.Start())
 	{
-
+		std::cout << "[WORLD-SERVER] Started!\n";
+		std::cout << "[STREAM-SERVER] Started!\n";
 		startTime = clock.now();
 
 		// This is an attempt to have the server run on a fixed time step. 

@@ -80,9 +80,10 @@ private:
 		else {
 			std::cout << std::endl 
 				<< "[ERROR][SQLiteManager] - compact.sqlite3 not found. "
-				<< "You have to manually copy the 'data' folder to the Project Path." << std::endl
+				<< "You have to manually copy the 'data' folder to the Build Root Path." << std::endl
 				<< "If this is a new clone, you have to get hold of the compact.sqlite3 db and manually place it in 'data' folder."
 				<< std::endl << std::endl;
+			std::cin.get();
 			return false;
 		}
 

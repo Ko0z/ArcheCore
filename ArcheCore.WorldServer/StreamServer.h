@@ -23,7 +23,6 @@ public:
 			return false;
 		}
 
-		std::cout << "[STREAM-SERVER] Started!\n";
 		return true;
 	}
 
