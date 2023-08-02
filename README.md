@@ -1,5 +1,6 @@
 # ArcheCore
 A server software for Archeage written in C++
+Much inspired from AAEmu, huge credit to them.
 At this time there is no database integration so you cant save any progression. The only thing that is implemented thus far is the ability to log in, create a character and run around in the world with everyone else that has connected to the server. No combat, no mobs/npc etc..
 
 # Dependencies
