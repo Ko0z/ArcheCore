@@ -1,8 +1,9 @@
 # ArcheCore
-A server software for Archeage written in C++
+A server software for Archeage 1.2 written in C++
 Much inspired from AAEmu, huge credit to them.
 At this time there is no database integration so you cant save any progression. The only thing that is implemented thus far is the ability to log in, create a character and run around in the world with everyone else that has connected to the server. No combat, no mobs/npc etc..
 
+The server runs on a fixed time step and is set to 10 updates per second right now for testing purposes.
 # Dependencies
 
 ![image](https://github.com/Ko0z/ArcheCore/assets/9639004/3464ac0d-67dc-474d-a469-f6eefae30313)
@@ -64,7 +65,7 @@ You have to copy the "data" folder and the "Server.cfg" file from the repository
 
 ![image](https://github.com/Ko0z/ArcheCore/assets/9639004/e5b65fbd-23c9-47a7-85fd-935e49298f43)
 
-Then you have to find the serverside information data, a sqlite database containing information about everything from monster spawns to damage values. You can find the "compact.sqlite3" in the AAEmu git repository Wiki under "Getting Started" https://github.com/AAEmu/AAEmu/wiki (this is also where you can find a client if you dont have a 1.2 client already but it is not needed to run the server) **You need to place this "compact.sqlite3" file inside the "data" folder that you already placed in the root build folder.**
+Then you have to find the serverside information data, a sqlite database containing information about everything from monster spawns to damage values. You can information about how to find the "compact.sqlite3" in the AAEmu git repository Wiki under "Getting Started" https://github.com/AAEmu/AAEmu/wiki **You need to place this "compact.sqlite3" file inside the "data" folder that you already placed in the root build folder.**
 
 ![image](https://github.com/Ko0z/ArcheCore/assets/9639004/5f639770-db46-42be-bc47-63fd97c761fa)
 
