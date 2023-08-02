@@ -4,7 +4,7 @@ At this time there is no database integration so you cant save any progression. 
 
 # Dependencies
 
-![image](https://github.com/Ko0z/ArcheCore/assets/9639004/1a3aa6ae-1471-4e08-ba06-cd4498df9bff)
+![image](https://github.com/Ko0z/ArcheCore/assets/9639004/3464ac0d-67dc-474d-a469-f6eefae30313)
 
 Updated versions will still probably work fine in the future...
 
@@ -61,15 +61,16 @@ Make sure that you have compiled the project and made a build so that you have t
 
 You have to copy the "data" folder and the "Server.cfg" file from the repository root and paste it in your build root folder.
 
-![image](https://github.com/Ko0z/ArcheCore/assets/9639004/eb7ed233-158b-4bdf-abda-9da501c55501)
+![image](https://github.com/Ko0z/ArcheCore/assets/9639004/e5b65fbd-23c9-47a7-85fd-935e49298f43)
 
 Then you have to find the serverside information data, a sqlite database containing information about everything from monster spawns to damage values. You can find the "compact.sqlite3" in the AAEmu git repository Wiki under "Getting Started" https://github.com/AAEmu/AAEmu/wiki (this is also where you can find a client if you dont have a 1.2 client already but it is not needed to run the server) **You need to place this "compact.sqlite3" file inside the "data" folder that you already placed in the root build folder.**
 
-![image](https://github.com/Ko0z/ArcheCore/assets/9639004/402437ca-6b7b-4f09-987e-b168ac618262)
+![image](https://github.com/Ko0z/ArcheCore/assets/9639004/5f639770-db46-42be-bc47-63fd97c761fa)
 
 Configure the server Port and IP settings inside the Server.cfg file. (open with notepad or any IDE) If you plan to run the server over the internet you might have to open the ports in your router that you've chosen respectively. Running on LAN (127.0.0.1) obviously work fine without this step.
 
 You can run the LoginServer independantly of the WorldServer on different machines if necessary. The LoginServer do NOT need the data folder in this case, but the "Server.cfg" file is needed by both executables and it needs to be in the same folder as their .exe
 
-![image](https://github.com/Ko0z/ArcheCore/assets/9639004/b9d144e0-805f-45f7-8a12-db2a94e59152)
+![image](https://github.com/Ko0z/ArcheCore/assets/9639004/326659ab-a760-4b8a-8842-c669221aed17)
 
+Ko0z/ArcheCore is not in any way affiliated with XLGames. All brands and trademarks belong to their respective owners. ArcheCore is not a XLGames-approved software, nor is it associated with XLGames.
