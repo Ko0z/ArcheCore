@@ -74,4 +74,12 @@ You can run the LoginServer independantly of the WorldServer on different machin
 
 ![image](https://github.com/Ko0z/ArcheCore/assets/9639004/326659ab-a760-4b8a-8842-c669221aed17)
 
+# Future plans
+- Change from ENTT to FLECS entity library to experiment with their entity relationship features
+- Use the c++ library [recast_navigation](https://github.com/recastnavigation/recastnavigation) for doing navigation and pathfinding jobs
+- Load and spawn mobs for cells where players are active by some spatial hashing system
+- Handle skills and combat in general
+
+to be continued...
+
 Ko0z/ArcheCore is not in any way affiliated with XLGames. All brands and trademarks belong to their respective owners. ArcheCore is not a XLGames-approved software, nor is it associated with XLGames.
