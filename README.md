@@ -16,7 +16,7 @@ Open the terminal in a location where you want to store the vcpkg files and depe
 ```
 git clone https://github.com/Microsoft/vcpkg.git
 cd vcpkg
-.\bootstrap-vcpkg.bat
+.\bootstrap-vcpkg.bat -disableMetrics
 
 vcpkg install asio:x64-windows-static
 vcpkg install entt:x64-windows-static
