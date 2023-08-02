@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# Visual Studio 
+.vs
+x64
+
+# VS binaries output
+bin/*
+
+# Dependencies
+/data/compact.sqlite3
+/compact.sqlite3
+/ArcheCore.WorldServer/data/compact.sqlite3

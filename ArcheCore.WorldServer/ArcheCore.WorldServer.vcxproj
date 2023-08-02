@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.1.0.0\build\native\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.props" Condition="Exists('..\packages\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.1.0.0\build\native\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ba3070d6-822b-49c5-a5f5-b8dc83523d38}</ProjectGuid>
+    <RootNamespace>ArcheCoreWorldServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <VcpkgTriplet Condition="'$(Platform)'=='Win32'">x86-windows-static</VcpkgTriplet>
+    <VcpkgTriplet Condition="'$(Platform)'=='x64'">x64-windows-static</VcpkgTriplet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>
+    </CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>
+    </CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);../ArcheCore.Shared;C:\dev\Repos\ArcheCore\asio-1.20.0\include;../include/sqlite3;../include/pugixml;Game;Game/Objects;Game/Faction</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);../ArcheCore.Shared;C:\dev\Repos\ArcheCore\asio-1.20.0\include;../include/sqlite3;../include/pugixml;Game;Game/Objects;Game/Faction</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <ExternalIncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</ExternalIncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <ExternalIncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</ExternalIncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>../ArcheCore.Shared;Game;Game/Objects;Game/Faction</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>../ArcheCore.Shared;Game;Game/Objects;Game/Faction</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\Entity\Character.cpp" />
+    <ClCompile Include="Game\Entity\Inventory.cpp" />
+    <ClCompile Include="Game\Entity\Items.cpp" />
+    <ClCompile Include="Game\Entity\Movement.cpp" />
+    <ClCompile Include="Game\Entity\Object.cpp" />
+    <ClCompile Include="Game\Entity\Skill.cpp" />
+    <ClCompile Include="Game\Faction\SystemFaction.cpp" />
+    <ClCompile Include="Game\Managers\CharacterManager.cpp" />
+    <ClCompile Include="Game\Managers\FactionManager.cpp" />
+    <ClCompile Include="Game\Managers\ItemManager.cpp" />
+    <ClCompile Include="Game\Managers\LocalizationManager.cpp" />
+    <ClCompile Include="Game\Managers\OpCodeManager.cpp" />
+    <ClCompile Include="Game\Managers\SkillManager.cpp" />
+    <ClCompile Include="Game\Managers\WorldManager.cpp" />
+    <ClCompile Include="Game\Managers\ZoneManager.cpp" />
+    <ClCompile Include="StreamSession.cpp" />
+    <ClCompile Include="WorldServer.cpp" />
+    <ClCompile Include="WorldSession.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Character\CharacterStructs.h" />
+    <ClInclude Include="Game\Entity\Buff.h" />
+    <ClInclude Include="Game\Entity\Character.h" />
+    <ClInclude Include="Game\Entity\Connection.h" />
+    <ClInclude Include="Game\Entity\Enums.h" />
+    <ClInclude Include="Game\Entity\Movement.h" />
+    <ClInclude Include="Game\Entity\Object.h" />
+    <ClInclude Include="Game\Entity\Skill.h" />
+    <ClInclude Include="Game\Entity\Transform.h" />
+    <ClInclude Include="Game\Entity\Unit.h" />
+    <ClInclude Include="Game\Entity\common_entity.h" />
+    <ClInclude Include="Game\Entity\Inventory.h" />
+    <ClInclude Include="Game\Entity\Items.h" />
+    <ClInclude Include="Game\Entity\Player.h" />
+    <ClInclude Include="Game\Entity\UnitCustomModelData.h" />
+    <ClInclude Include="Game\Faction\SystemFaction.h" />
+    <ClInclude Include="Game\Managers\CharacterManager.h" />
+    <ClInclude Include="Game\Items\ItemDefines.h" />
+    <ClInclude Include="Game\Managers\FactionManager.h" />
+    <ClInclude Include="Game\Managers\ItemManager.h" />
+    <ClInclude Include="Game\Managers\LocalizationManager.h" />
+    <ClInclude Include="Game\Managers\OpCodeManager.h" />
+    <ClInclude Include="Game\Managers\SkillManager.h" />
+    <ClInclude Include="Game\Managers\SqLiteManager.h" />
+    <ClInclude Include="Game\Managers\WorldManager.h" />
+    <ClInclude Include="Game\Managers\ZoneManager.h" />
+    <ClInclude Include="Game\Objects\Guid.h" />
+    <ClInclude Include="Game\Utility\JsonUtility.h" />
+    <ClInclude Include="Game\Utility\SQLiteUtility.h" />
+    <ClInclude Include="Game\Zones\ZoneConflict.h" />
+    <ClInclude Include="Game\Zones\ZoneGroup.h" />
+    <ClInclude Include="StreamServer.h" />
+    <ClInclude Include="StreamSession.h" />
+    <ClInclude Include="WorldServer.h" />
+    <ClInclude Include="WorldSession.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.1.0.0\build\native\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.targets" Condition="Exists('..\packages\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.1.0.0\build\native\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.1.0.0\build\native\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.1.0.0\build\native\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.props'))" />
+    <Error Condition="!Exists('..\packages\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.1.0.0\build\native\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.1.0.0\build\native\vcpkg.C.dev.vcpkgarchecoredependencies.vcpkg.targets'))" />
+  </Target>
+</Project>
